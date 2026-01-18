@@ -167,7 +167,7 @@ const AddStory = () => {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:5000/story/addstory",
+        "https://global-logistics-isu8.onrender.com/story/addstory",
         formData,
         config
       );

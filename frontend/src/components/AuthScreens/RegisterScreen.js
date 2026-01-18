@@ -24,7 +24,7 @@ const RegisterScreen = () => {
 
     try {
       const { data } = await axios.post(
-        "https://mello-tracking.onrender.com/auth/register",
+        "https://global-logistics-isu8.onrender.com/auth/register",
         {
           username,
           email,

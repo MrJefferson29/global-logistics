@@ -107,7 +107,7 @@ const EditPackageModal = ({ story, isOpen, onClose, onSuccess }) => {
 
     try {
       const { data } = await axios.put(
-        `https://mello-tracking.onrender.com/story/editstory/${story.slug}`,
+        `https://global-logistics-isu8.onrender.com/story/editstory/${story.slug}`,
         formData,
         config
       );

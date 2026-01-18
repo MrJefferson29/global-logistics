@@ -30,7 +30,7 @@ const ChangePassword = () => {
 
         try {
             const { data } = await axios.put(
-                "https://mello-tracking.onrender.com/user/changePassword",
+                "https://global-logistics-isu8.onrender.com/user/changePassword",
                 {
                     newPassword,
                     oldPassword

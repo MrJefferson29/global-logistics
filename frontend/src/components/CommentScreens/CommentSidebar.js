@@ -17,7 +17,7 @@ const CommentSidebar = ({ slug, sidebarShowStatus, setSidebarShowStatus, activeU
 
   const getStoryComments = async () => {
     try {
-      const { data } = await axios.get(`https://mello-tracking.onrender.com/comment/${slug}/getAllComment`)
+      const { data } = await axios.get(`https://global-logistics-isu8.onrender.com/comment/${slug}/getAllComment`)
       setCommentList(data.data)
       setCount(data.count)
     }

@@ -29,7 +29,7 @@ const Profile = () => {
             setLoading(true)
 
             try {
-                const { data } = await axios.get("https://mello-tracking.onrender.com/user/profile", config)
+                const { data } = await axios.get("https://global-logistics-isu8.onrender.com/user/profile", config)
 
                 setUser(data.data)
 

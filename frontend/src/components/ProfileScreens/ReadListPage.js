@@ -21,7 +21,7 @@ const ReadListPage = () => {
             setLoading(true)
 
             try {
-                const { data } = await (await axios.get(`https://mello-tracking.onrender.com/user/readList`, config)).data
+                const { data } = await (await axios.get(`https://global-logistics-isu8.onrender.com/user/readList`, config)).data
                 setReadList(data)
                 setLoading(false)
             }

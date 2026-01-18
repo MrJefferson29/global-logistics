@@ -14,7 +14,7 @@ const LoginScreen = () => {
 
     try {
       const { data } = await axios.post(
-        "https://mello-tracking.onrender.com/auth/login",
+        "https://global-logistics-isu8.onrender.com/auth/login",
         { email, password }
       );
       localStorage.setItem("authToken", data.token);

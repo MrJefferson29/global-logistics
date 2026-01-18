@@ -18,7 +18,7 @@ const AuthContextProvider = props => {
 
     const controlAuth = async () => {
       try {
-        const { data } = await axios.get("https://mello-tracking.onrender.com/auth/private", config);
+        const { data } = await axios.get("https://global-logistics-isu8.onrender.com/auth/private", config);
         setActiveUser(data.user)
       }
       catch (error) {
