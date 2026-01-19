@@ -12,6 +12,7 @@ import EditPackageModal from "./EditPackageModal";
 import bar from "../../Assets/bar.png";
 import tom from "../../Assets/tom.jpg";
 
+
 const customIcon = new L.Icon({
   iconUrl: pin,
   iconSize: [32, 32],
@@ -21,13 +22,8 @@ const customIcon = new L.Icon({
 
 const Story = ({ story, onUpdate }) => {
   const { activeUser } = useContext(AuthContext);
-  // Check if user is admin - check activeUser role
-  const isAdmin = activeUser && activeUser.role === "admin";
-  
-  // Debug: log to help identify issue
-  if (!isAdmin && activeUser) {
-    console.log("User is not admin. ActiveUser:", activeUser, "Role:", activeUser.role);
-  }
+  // Check if user is authenticated (has activeUser or authToken)
+  const isAuthenticated = (activeUser && Object.keys(activeUser).length > 0) || localStorage.getItem("authToken");
   
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
   
@@ -57,7 +53,7 @@ const Story = ({ story, onUpdate }) => {
               <TrackingIdValue>{trackingId}</TrackingIdValue>
             </TrackingIdDisplay>
             <ButtonGroup>
-              {isAdmin ? (
+              {isAuthenticated ? (
                 <TrackButton onClick={() => setIsEditModalOpen(true)}>
                   <FiEdit2 /> Edit Package
                 </TrackButton>
