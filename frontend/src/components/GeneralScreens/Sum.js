@@ -47,7 +47,7 @@ const Sum = () => {
     setSubmitStatus(null);
 
     // Create mailto link with form data
-    const subject = encodeURIComponent('Contact Form Submission from Ship45');
+    const subject = encodeURIComponent('Contact Form Submission from Global Logistics Inc.');
     const body = encodeURIComponent(
       `Name: ${formData.name}\n` +
       `Email: ${formData.email}\n` +
