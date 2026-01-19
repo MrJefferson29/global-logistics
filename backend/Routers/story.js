@@ -19,6 +19,8 @@ router.post("/:slug/like",[getAccessToRoute,checkStoryExist] ,likeStory)
 router.get("/editStory/:slug",[getAccessToRoute,checkStoryExist,checkUserAndStoryExist] , editStoryPage)
 
 router.put("/:slug/edit",[getAccessToRoute,checkStoryExist,checkUserAndStoryExist] ,editStory)
+// Alternative route for compatibility
+router.put("/editstory/:slug",[getAccessToRoute,checkStoryExist,checkUserAndStoryExist] ,editStory)
 
 router.delete("/:slug/delete",[getAccessToRoute,checkStoryExist,checkUserAndStoryExist] ,deleteStory)
 

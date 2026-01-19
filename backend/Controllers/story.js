@@ -212,6 +212,13 @@ const editStory  =asyncErrorWrapper(async(req,res,next)=>{
     } = req.body;
 
     const story = await Story.findOne({slug : slug })
+    
+    if (!story) {
+        return res.status(404).json({
+            success: false,
+            error: "Story not found"
+        });
+    }
 
     // Update all fields if provided
     if (title !== undefined) story.title = title;
