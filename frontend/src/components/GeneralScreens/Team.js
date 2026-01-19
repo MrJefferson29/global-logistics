@@ -10,7 +10,7 @@ export default function Services() {
     },
     {
       title: "E-Commerce Logistics",
-      description: "In today's fast-paced digital world, e-commerce businesses need logistics partners that can keep up with their growth. Ship45 offers tailored solutions for online retailers, including same-day delivery, returns management, and real-time tracking.",
+      description: "In today's fast-paced digital world, e-commerce businesses need logistics partners that can keep up with their growth. Global Logistics offers tailored solutions for online retailers, including same-day delivery, returns management, and real-time tracking.",
       image: "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?w=800&h=600&fit=crop"
     },
     {
@@ -20,7 +20,7 @@ export default function Services() {
     },
     {
       title: "International Shipping",
-      description: "Navigating the complexities of international trade can be challenging, but with Ship45 by your side, you can rest easy. We handle customs clearance, documentation, and compliance, ensuring that your goods move seamlessly across borders.",
+      description: "Navigating the complexities of international trade can be challenging, but with us by your side, you can rest easy. We handle customs clearance, documentation, and compliance, ensuring that your goods move seamlessly across borders.",
       image: "https://images.unsplash.com/photo-1601581875218-ee0c892ed92a?w=800&h=600&fit=crop"
     }
   ];
@@ -43,7 +43,7 @@ export default function Services() {
         <SectionHeading>Our Core Services: Tailored Solutions for Every Need</SectionHeading>
         <Separator />
         <IntroText>
-          At Ship45, we offer a comprehensive range of logistics services designed to meet the diverse needs of our clients. From domestic shipments to international freight, we've got you covered. Here's a closer look at what we do:
+          At Global Logistics, we offer a comprehensive range of logistics services designed to meet the diverse needs of our clients. From domestic shipments to international freight, we've got you covered. Here's a closer look at what we do:
         </IntroText>
       </CoreServicesSection>
 
@@ -60,10 +60,10 @@ export default function Services() {
       </ServicesGrid>
 
       <WhyChooseSection>
-        <SectionHeading>Why Choose Ship45?</SectionHeading>
+        <SectionHeading>Why Choose Us?</SectionHeading>
         <Separator />
         <WhyChooseText>
-          In a crowded logistics market, Ship45 stands out as a trusted partner that puts your needs first. Here's what sets us apart:
+          In a crowded logistics market, Global Logistics stands out as a trusted partner that puts your needs first. Here's what sets us apart:
         </WhyChooseText>
         <WhyChooseList>
           {whyChooseUs.map((item, index) => (

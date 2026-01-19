@@ -60,7 +60,7 @@ const Header = () => {
                   Home
                 </NavLink>
                 <NavLink className="link" to="/tracking" onClick={handleLinkClick}>
-                  Track
+                  Track Shipment
                 </NavLink>
                 {auth && (
                   <NavLink className="link" to="/create-post" onClick={handleLinkClick}>
@@ -71,10 +71,10 @@ const Header = () => {
                   About
                 </NavLink>
                 <NavLink className="link" to="/meet-the-team" onClick={handleLinkClick}>
-                  Team
+                  Services
                 </NavLink>
                 <NavLink className="link" to="/summary" onClick={handleLinkClick}>
-                  Insights
+                  Contact
                 </NavLink>
               </Nav>
             )}

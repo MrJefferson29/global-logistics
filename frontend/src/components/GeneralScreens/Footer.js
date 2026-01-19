@@ -30,8 +30,8 @@ function Footer() {
               <FooterLink to="/tracking">
                 Track Package
               </FooterLink>
-              <FooterLink to="/meet-the-team">Meet the team</FooterLink>
-              <FooterLink to="/summary">Delivery Summary</FooterLink>
+              <FooterLink to="/meet-the-team">Services</FooterLink>
+              <FooterLink to="/summary">Contact</FooterLink>
             </FooterSection>
           </Col>
           <Col md={4}>

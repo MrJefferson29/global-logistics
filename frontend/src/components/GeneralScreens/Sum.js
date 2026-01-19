@@ -135,11 +135,11 @@ const Sum = () => {
           <InfoHeading>Contact Info</InfoHeading>
           <InfoItem>
             <InfoLabel>Email Us</InfoLabel>
-            <InfoValue href="mailto:info@ship45.com">info@ship45.com</InfoValue>
+            <InfoValue href="mailto:globallogistics704@gmail.com"></InfoValue>
           </InfoItem>
           <InfoItem>
             <InfoLabel>Call Us</InfoLabel>
-            <InfoValue href="tel:+14085331289">+1 (408) 533-1289</InfoValue>
+            <InfoValue href="tel:469-656-8710">469-656-8710</InfoValue>
           </InfoItem>
         </InfoSection>
 
