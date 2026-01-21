@@ -434,54 +434,6 @@ const AddStory = () => {
               </Col>
             </Row>
           </SectionGroup>
-
-          {/* Package Dimensions Section */}
-          <SectionGroup>
-            <SectionTitle>Package Dimensions (Optional)</SectionTitle>
-            <Row>
-              <Col md="3">
-                <FormInput
-                  type="text"
-                  placeholder="Length (cm) (Ex: 30)"
-                  value={packageLength}
-                  onChange={(e) => setPackageLength(e.target.value)}
-                />
-              </Col>
-              <Col md="3">
-                <FormInput
-                  type="text"
-                  placeholder="Width (cm) (Ex: 20)"
-                  value={packageWidth}
-                  onChange={(e) => setPackageWidth(e.target.value)}
-                />
-              </Col>
-              <Col md="3">
-                <FormInput
-                  type="text"
-                  placeholder="Height (cm) (Ex: 15)"
-                  value={packageHeight}
-                  onChange={(e) => setPackageHeight(e.target.value)}
-                />
-              </Col>
-              <Col md="3">
-                <FormInput
-                  type="text"
-                  placeholder="Pieces (Ex: 1)"
-                  value={pieces}
-                  onChange={(e) => setPieces(e.target.value)}
-                />
-              </Col>
-              <Col md="12">
-                <FormInput
-                  type="text"
-                  placeholder="Description (Ex: Package contents description)"
-                  value={description}
-                  onChange={(e) => setDescription(e.target.value)}
-                />
-              </Col>
-            </Row>
-          </SectionGroup>
-
           {/* Location Information Section */}
           <SectionGroup>
             <SectionTitle>Location Information</SectionTitle>
