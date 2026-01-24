@@ -277,7 +277,7 @@ const Story = ({ story, onUpdate }) => {
                 </SummaryItem>
                 <SummaryItem>
                   <SummaryLabel>Total Volume:</SummaryLabel>
-                  <SummaryValue>{story.packageLength || "Undefined"} x {story.packageWidth || "Undefined"} x {story.packageHeight || "Undefined"}</SummaryValue>
+                  <SummaryValue>{story.packageLength} x {story.packageWidth} x {story.packageHeight || "Undefined"}</SummaryValue>
                 </SummaryItem>
                 <SummaryItem>
                   <SummaryLabel>Total Actual Weight:</SummaryLabel>
