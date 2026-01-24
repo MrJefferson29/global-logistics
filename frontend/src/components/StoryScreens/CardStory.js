@@ -270,20 +270,6 @@ const Story = ({ story, onUpdate }) => {
                 </tbody>
               </PackageTable>
               </TableWrapper>
-              <PackageSummary>
-                <SummaryItem>
-                  <SummaryLabel>Total Volumetric Weight:</SummaryLabel>
-                  <SummaryValue>{story.weight || "Undefined"}</SummaryValue>
-                </SummaryItem>
-                <SummaryItem>
-                  <SummaryLabel>Total Volume:</SummaryLabel>
-                  <SummaryValue>{story.packageLength} x {story.packageWidth} x {story.packageHeight || "Undefined"}</SummaryValue>
-                </SummaryItem>
-                <SummaryItem>
-                  <SummaryLabel>Total Actual Weight:</SummaryLabel>
-                  <SummaryValue>{story.weight || "Undefined"}</SummaryValue>
-                </SummaryItem>
-              </PackageSummary>
             </InfoSection>
           )}
 
