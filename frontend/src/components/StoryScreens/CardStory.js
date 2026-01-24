@@ -273,15 +273,15 @@ const Story = ({ story, onUpdate }) => {
               <PackageSummary>
                 <SummaryItem>
                   <SummaryLabel>Total Volumetric Weight:</SummaryLabel>
-                  <SummaryValue>0.00kg</SummaryValue>
+                  <SummaryValue>{story.weight || "Undefined"}</SummaryValue>
                 </SummaryItem>
                 <SummaryItem>
                   <SummaryLabel>Total Volume:</SummaryLabel>
-                  <SummaryValue>0.00cu. m.</SummaryValue>
+                  <SummaryValue>{story.packageLength || "Undefined"} x {story.packageWidth || "Undefined"} x {story.packageHeight || "Undefined"}</SummaryValue>
                 </SummaryItem>
                 <SummaryItem>
                   <SummaryLabel>Total Actual Weight:</SummaryLabel>
-                  <SummaryValue>0.00kg</SummaryValue>
+                  <SummaryValue>{story.weight || "Undefined"}</SummaryValue>
                 </SummaryItem>
               </PackageSummary>
             </InfoSection>
