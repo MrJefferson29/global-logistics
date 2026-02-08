@@ -8,6 +8,7 @@ import gal1 from '../../Assets/gal1.jpg'
 import gal2 from '../../Assets/gal2.jpg'
 import gal3 from '../../Assets/gal3.jpg'
 import gal4 from '../../Assets/gal4.jpg'
+import TestimonialSlider from "./Testimonials";
 
 export default function Sc1() {
   return (
@@ -100,6 +101,8 @@ export default function Sc1() {
           alt="Fleet of delivery vans" 
         />
       </GallerySection>
+
+      <TestimonialSlider />
     </Styles>
   );
 }
