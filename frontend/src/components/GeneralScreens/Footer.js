@@ -18,7 +18,6 @@ function Footer() {
                 accuracy, and seamless operations, providing both package and
                 pet delivery services to enhance customer satisfaction.
                 <br />
-                <b><strong>Dallas, Texas</strong></b>
               </FooterDescription>
             </FooterSection>
           </Col>
@@ -49,7 +48,6 @@ function Footer() {
                 </SocialIcon>
               </SocialIcons>
               <br />
-              <p><b>469-656-8710</b></p>
             </FooterSection>
           </Col>
         </Row>
