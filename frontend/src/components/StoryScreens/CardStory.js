@@ -1,24 +1,14 @@
 import React, { useState, useContext } from "react";
 import { Col, Row, Container } from "react-bootstrap";
 import styled from "styled-components";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import L from "leaflet";
-import "leaflet/dist/leaflet.css";
 import PropTypes from "prop-types";
 import { FiEdit2 } from "react-icons/fi";
-import pin from "../../Assets/pin.png";
 import { AuthContext } from "../../Context/AuthContext";
+import Map from "./Map";
 import EditPackageModal from "./EditPackageModal";
 import bar from "../../Assets/bar.png";
 import tom from "../../Assets/tom.jpg";
 
-
-const customIcon = new L.Icon({
-  iconUrl: pin,
-  iconSize: [32, 32],
-  iconAnchor: [16, 32],
-  popupAnchor: [0, -32],
-});
 
 const Story = ({ story, onUpdate }) => {
   const { activeUser } = useContext(AuthContext);
@@ -27,7 +17,6 @@ const Story = ({ story, onUpdate }) => {
   
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
   
-  const hasValidCoordinates = story.lat && story.long && !isNaN(story.lat) && !isNaN(story.long);
   const trackingId = story.title || "N/A";
   const receiverName = story.receiverName || story.content || "N/A";
   const receiverAddress = story.receiverAddress || story.address || "N/A";
@@ -321,34 +310,20 @@ const Story = ({ story, onUpdate }) => {
             </TableWrapper>
           </InfoSection>
 
-          {/* Map Section (if coordinates available) */}
-          {hasValidCoordinates && (
-            <InfoSection>
-              <SectionTitle>Package Location on Map</SectionTitle>
-              <MapWrapper>
-                <MapContainer
-                  center={[parseFloat(story.lat), parseFloat(story.long)]}
-                  zoom={13}
-                  scrollWheelZoom={false}
-                  style={{
-                    width: "100%",
-                    height: "350px",
-                    borderRadius: "10px",
-                  }}
-                >
-                  <TileLayer
-                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                    attribution="&copy; OpenStreetMap contributors"
-                  />
-                  <Marker position={[parseFloat(story.lat), parseFloat(story.long)]} icon={customIcon}>
-                    <Popup>
-                      Package current location: {story.location || "Unknown"}
-                    </Popup>
-                  </Marker>
-                </MapContainer>
-              </MapWrapper>
-            </InfoSection>
-          )}
+          <InfoSection>
+            <SectionTitle>Package Location on Map</SectionTitle>
+            <MapWrapper>
+              <Map
+                lat={story.lat}
+                long={story.long}
+                locationLabel={story.location}
+                height="350px"
+                zoom={13}
+                scrollWheelZoom={false}
+                style={{ borderRadius: "10px" }}
+              />
+            </MapWrapper>
+          </InfoSection>
         </StoryCard>
       </StoryWrapper>
       
